@@ -1,3 +1,4 @@
+import os
 import sqlite3
 
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -10,7 +11,7 @@ from telegram.ext import (
     filters,
 )
 
-TOKEN = "توکن_خودت_اینجا"
+TOKEN = os.environ.get("BOT_TOKEN")
 ADMIN_ID = 653654882
 
 
